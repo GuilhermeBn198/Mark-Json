@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guilhermebn978/mark-json.git"
+    "url": "git+https://github.com/GuilhermeBn198/mark-json.git"
   },
   "keywords": [
     "markdown",
@@ -20,12 +20,12 @@
     "parser",
     "nodejs"
   ],
-  "author": "Seu Nome",
+  "author": "Guilherme Bernardo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guilhermebn978/mark-json/issues"
+    "url": "https://github.com/GuilhermeBn198/mark-json/issues"
   },
-  "homepage": "https://github.com/guilhermebn978/mark-json#readme",
+  "homepage": "https://github.com/GuilhermeBn198/mark-json#readme",
   "dependencies": {
     "markdown-it": "^13.0.1"
   }
