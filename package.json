@@ -1,0 +1,32 @@
+{
+  "name": "mark-json",
+  "version": "1.0.0",
+  "description": "Conversor de Markdown para JSON estruturado",
+  "main": "index.js",
+  "bin": {
+    "mark-json": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermebn978/mark-json.git"
+  },
+  "keywords": [
+    "markdown",
+    "json",
+    "converter",
+    "parser",
+    "nodejs"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermebn978/mark-json/issues"
+  },
+  "homepage": "https://github.com/guilhermebn978/mark-json#readme",
+  "dependencies": {
+    "markdown-it": "^13.0.1"
+  }
+}

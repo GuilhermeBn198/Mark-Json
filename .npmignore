@@ -1,0 +1,15 @@
+# Ignorar arquivos não necessários no pacote NPM
+
+# Documentação e exemplos
+README.md
+LICENSE
+.gitignore
+.npmignore
+input.md
+
+# Diretórios não essenciais
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
