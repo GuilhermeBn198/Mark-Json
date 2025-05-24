@@ -4,12 +4,16 @@ const md = new MarkdownIt();
 function parseInline(tokens) {
   const result = [];
 
+  if (!tokens) return result;
+
   let i = 0;
   while (i < tokens.length) {
     const token = tokens[i];
 
     if (token.type === 'text') {
-      result.push(token.content);
+      if (token.content.trim() !== '') {  // <-- filtra texto vazio
+        result.push(token.content);
+      }
       i++;
     } else if (token.type === 'strong_open') {
       const inner = [];
@@ -30,8 +34,7 @@ function parseInline(tokens) {
       result.push({ type: 'em', content: parseInline(inner) });
       i++; // skip em_close
     } else {
-      // fallback genérico, apenas captura o conteúdo bruto
-      if (token.content) {
+      if (token.content && token.content.trim() !== '') {  // filtragem extra para tokens inesperados
         result.push(token.content);
       }
       i++;
